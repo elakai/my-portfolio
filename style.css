@@ -217,8 +217,6 @@ h3 { color: #333; margin-top: 0; }
     
     width: 100%;
     max-width: 400px; 
-    
-   
     margin: 0 auto; 
 }
 
@@ -356,9 +354,15 @@ h3 { color: #333; margin-top: 0; }
     transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
-.exp-view, .project-card:hover {
+.project-card:hover {
     transform: translateY(-7px);
     border-color: #64ffda; 
+    box-shadow: 0 0 20px rgba(100, 255, 218, 0.2);
+}
+
+.exp-view .project-card:hover {
+    transform: translateY(-7px);
+    border-color: #64ffda;
     box-shadow: 0 0 20px rgba(100, 255, 218, 0.2);
 }
 /* --- 3. TEXT COLORS (High Contrast) --- */
@@ -370,8 +374,6 @@ h3 { color: #333; margin-top: 0; }
     font-size: 1.4em;
     font-weight: 600;
 }
-
-
 
 .project-card p {
     color: #a8b2d1; 
