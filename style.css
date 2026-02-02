@@ -356,13 +356,11 @@ h3 { color: #333; margin-top: 0; }
     transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
-.project-card:hover {
+.exp-view, .project-card:hover {
     transform: translateY(-7px);
     border-color: #64ffda; 
-
     box-shadow: 0 0 20px rgba(100, 255, 218, 0.2);
 }
-
 /* --- 3. TEXT COLORS (High Contrast) --- */
 .project-card h3 {
     font-family: 'Fira Code', monospace;
@@ -372,6 +370,8 @@ h3 { color: #333; margin-top: 0; }
     font-size: 1.4em;
     font-weight: 600;
 }
+
+
 
 .project-card p {
     color: #a8b2d1; 
@@ -447,22 +447,23 @@ h3 { color: #333; margin-top: 0; }
     font-weight: normal;
 }
 
-/* Seamless Description */
+
+/* --- EXPERIENCE CARD STYLE --- */
 .exp-view .project-card {
-    background: transparent;
-    box-shadow: none;
-    padding: 10px 0 10px 25px;
+    background-color: #0A192F; 
+    border: 1px solid rgba(255, 255, 255, 0.1);
+
+    border-left: 4px solid #64ffda !important; 
+    
+    padding: 25px;
     margin-bottom: 30px;
-    color: white;
     border-radius: 25px;
+    color: var(--text-main);
+
+    box-shadow: 0 10px 30px -15px rgba(2, 12, 27, 0.7);
+    transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
-.exp-view .project-card h3 {
-    color: var(--accent-color);
-    font-size: 1.8em;
-    margin-top: 0;
-    margin-bottom: 5px;
-}
 
 .exp-view .project-card p, 
 .exp-view .project-card li {
