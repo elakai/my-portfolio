@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pamela Kaye Magnifico | CpE Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@500;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <section id="landing-page">
+        <div class="landing-header">
+            <div class="site-logo">MY PORTFOLIO</div>
+            
+            <div class="header-right">
+                <a href="resume.pdf" target="_blank" class="resume-btn">Resume</a>
+                
+                <a href="#" onclick="openContactModal()" class="contact-link">Contact Me ↗</a>
+            </div>
+        </div>
+
+        <div class="sonar-wrapper">
+            <div class="sonar-emitter">
+                <div class="sonar-wave"></div>
+                <div class="sonar-wave"></div>
+                <div class="sonar-wave"></div>
+                <div class="sonar-wave"></div>
+            </div>
+        </div>
+
+        <div class="hero-container">
+            <div class="hero-center-section">
+                
+                <p class="hero-intro-small" style="color: var(--accent-color); font-family: var(--font-mono); margin-bottom: 20px; font-size: 1.1em;">
+                    Hi, my name is
+                </p>
+
+                <h1 class="hero-role">
+                    PAM MAGNIFICO
+                </h1>
+                
+    
+                <p class="hero-desc">
+                    I am a Computer Engineering student based in Bicol, Philippines.
+                    I specialize in Cybersecurity, Data Science, and bridging hardware with software systems.
+                </p>
+
+                <div class="menu-grid-center">
+                    <button class="menu-btn" onclick="openSection('experience')">EXPERIENCE</button>
+                    <button class="menu-btn" onclick="openSection('projects')">PROJECTS</button>
+                    <button class="menu-btn" onclick="openSection('skills')">SKILLS</button>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <nav class="nav-bar" id="navbar">
+        <span class="nav-link" onclick="goHome()">Home</span>
+        <span class="nav-link" onclick="openSection('experience')">Experience</span>
+        <span class="nav-link" onclick="openSection('projects')">Projects</span>
+        <span class="nav-link" onclick="openSection('skills')">Skills</span>
+    </nav>
+
+    <div id="main-app">
+        
+        <div id="experience" class="content-section">
+            <h2>Professional Experience</h2>
+            
+            <div class="exp-menu">
+                <button class="exp-btn" onclick="showExperience('view-unleash', this)">
+                    UNLEASH / LIF Launchpad
+                    <span class="exp-date">Sept 2025</span>
+                </button>
+                <button class="exp-btn" onclick="showExperience('view-revlv', this)">
+                    REVLV Solutions
+                    <span class="exp-date">Jun 2025</span>
+                </button>
+            </div>
+
+            <div id="exp-placeholder" style="text-align: center; padding: 40px; color: var(--secondary-color);">
+                <p>Select a role above to see details.</p>
+            </div>
+
+            <div id="view-unleash" class="exp-view" style="display: none;">
+                <div class="project-card">
+                    <h3>UNLEASH Philippines (LIF Launchpad 2025)</h3>
+                    <p>Selected as one of <strong>150 Filipino innovators</strong> for the UNLEASH Innovation Lab at the <strong>University of Santo Tomas</strong>. This program, part of the Royal Academy of Engineering's <strong>LIF Launchpad</strong> initiative, focuses on developing scalable solutions for <strong>Sustainable Cities</strong>.</p>
+                    <ul>
+                        <li><strong>Innovation Lab:</strong> Participated in an intensive 1-week prototyping lab using the UNLEASH Methodology.</li>
+                </div>
+
+                <div class="carousel-container">
+                    <div class="carousel-track">
+                        <div class="carousel-slide"><img src="images/lif-photo7.jpg" alt="UNLEASH Lab"><div class="caption">UNLEASH Lab: Brainstorming</div></div>
+                        <div class="carousel-slide"><img src="images/lif-photo6.jpg" alt="Brainstorming"><div class="caption">Brainstorming Session</div></div>
+                        <div class="carousel-slide"><img src="images/lif-photo3.jpg" alt="Problem Framing"><div class="caption">Problem Framing Session</div></div>
+                        <div class="carousel-slide"><img src="images/lif-photo8.jpg" alt="Brainstorming"><div class="caption">Brainstorming Session</div></div>
+                        <div class="carousel-slide"><img src="images/lif-photo1.jpg" alt="UNLEASH"><div class="caption">Group Image</div></div>
+                        <div class="carousel-slide"><img src="images/lif-photo2.jpg" alt="Final Pitch"><div class="caption">Final Pitch Presentation</div></div>
+                        <div class="carousel-slide"><img src="images/lif-photo4.jpg" alt="Groufie"><div class="caption">Last Day of UNLEASH</div></div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="view-revlv" class="exp-view" style="display: none;">
+                <div class="project-card" style="border-left: 5px solid #2c3e50;">
+                    <h3>Special Projects Intern</h3>
+                    <p><strong>REVLV Solutions (Jun - Jul 2025)</strong></p>
+                    <p><strong>Project: Nationwide Asset Mapping</strong></p>
+                    <ul>
+                        <li><strong>Geospatial Data Mapping:</strong> Executed a nationwide mapping initiative to locate coordinates for critical infrastructure.</li>
+                        <li><strong>Data Integrity:</strong> Utilized advanced Excel/Sheets functions to clean and verify large-scale datasets.</li>
+                    </ul>
+                </div>
+
+                <div class="carousel-container">
+                    <div class="carousel-track">
+                        <div class="carousel-slide"><img src="images/revlv-photo.jpg" alt="Deployment"><div class="caption">UNLEASH Lab: Brainstorming</div></div>
+                        <div class="carousel-slide"><img src="images/revlv-photo.jpg" alt="Prototyping"><div class="caption">Rapid Prototyping Session</div></div>
+                        <div class="carousel-slide"><img src="images/revlv-photo.jpg" alt="Final Pitch"><div class="caption">Final Pitch Presentation</div></div>
+                        <div class="carousel-slide"><img src="images/revlv-photo.jpg" alt="Deployment"><div class="caption">UNLEASH Lab: Brainstorming</div></div>
+                        <div class="carousel-slide"><img src="images/revlv-photo.jpg" alt="Prototyping"><div class="caption">Rapid Prototyping Session</div></div>
+                        <div class="carousel-slide"><img src="images/revlv-photo.jpg" alt="Final Pitch"><div class="caption">Final Pitch Presentation</div></div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div id="projects" class="content-section">
+            <h2>Featured Projects</h2>
+            <div style="margin-bottom:20px; display:flex; gap:10px;">
+                <button onclick="filterProjects('all')" class="skill-tag" style="cursor:pointer;">All</button>
+                <button onclick="filterProjects('software')" class="skill-tag" style="cursor:pointer;">Software</button>
+                <button onclick="filterProjects('hardware')" class="skill-tag" style="cursor:pointer;">Hardware</button>
+            </div>
+
+            <div class="project-card filter-item" data-category="software">
+                <div style="display: flex; justify-content: space-between;">
+                    <h3>PawLink (LIF Launchpad)</h3>
+                </div>
+                <p>A centralized platform leveraging real-time reporting and microchipping integration to streamline rescue-to-adoption workflows.</p>
+            </div>
+
+            <div class="project-card filter-item" data-category="hardware">
+                <div style="display: flex; justify-content: space-between;">
+                    <h3>Variable Power Supply Unit</h3>
+                    <a href="Pam Power Supply.pdf" target="_blank" style="color:var(--accent-color); text-decoration:none; font-size:0.9em;">View Documentation ↗</a>
+                </div>
+                <p><strong>Stack:</strong> KiCad, PCB Fabrication, Circuit Analysis, Soldering</p>
+                <p>
+                    Designed and fabricated a custom multi-output power supply featuring a 
+                    <strong>Full-Wave Bridge Rectifier</strong> and <strong>Variable Regulator</strong>. 
+                    Provides fixed 5V output and adjustable voltages (1.5V–12V) via a rotary switch.
+                </p>
+
+            </div>
+
+            <div class="project-card filter-item" data-category="software">
+                <div style="display: flex; justify-content: space-between;">
+                    <h3>Brick Breaker: Jungle Ruins</h3>
+                    <a href="https://github.com/elakai/Brick-Breaker-Jungle-Ruins" target="_blank" style="color:var(--accent-color); text-decoration:none; font-size:0.9em;">GitHub ↗</a>
+                </div>
+                <p><strong>Stack:</strong> Flutter, Dart, Game Loop</p>
+                <p>A cross-platform arcade game built with Flutter. Features custom collision detection, jungle-themed assets, and smooth 60fps rendering on both mobile and web.</p>
+            </div>
+
+            <div class="project-card filter-item" data-category="software">
+                <h3>RAG Chatbot Prototype</h3>
+                <p><strong>Stack:</strong> Python, LLMs, Vector DB</p>
+                <p>Developed a Retrieval-Augmented Generation (RAG) chatbot capable of processing large datasets for thesis research.</p>
+            </div>
+
+            <div class="project-card filter-item" data-category="software">
+                <div style="display: flex; justify-content: space-between;">
+                    <h3>Cat Got Your Wallet?</h3>
+                    <a href="https://github.com/elakai/Cat-Got-Your-Wallet" target="_blank" style="color:var(--accent-color); text-decoration:none; font-size:0.9em;">GitHub ↗</a>
+                </div>
+                <p><strong>Stack:</strong> Kotlin, Android, Room DB</p>
+                <p>An Android-based mobile application developed to facilitate effective personal expense management. Features include transaction recording, categorization, and data visualization using pie charts.</p>
+            </div>
+
+            <div class="project-card filter-item" data-category="hardware">
+                <h3>PacketHACKS Device Prototype</h3>
+                <p><strong>Stack:</strong> Hardware, IoT</p>
+                <p>Collaborated to design a hardware device proposal for the PacketHACKS National Hackathon (Naga Leg).</p>
+            </div>
+        </div>
+
+        <div id="skills" class="content-section">
+            <h2>Technical Arsenal</h2>
+
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+                
+                <div class="project-card">
+                    <h3>Languages</h3>
+                    <div class="skills-grid">
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">Ruby</span> <span class="skill-tag">Kotlin</span>
+                        <span class="skill-tag">Dart</span> 
+                        <span class="skill-tag">C++</span>
+                        <span class="skill-tag">SQL</span>
+                        <span class="skill-tag">JavaScript</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <h3>Domains</h3>
+                    <div class="skills-grid">
+                        <span class="skill-tag" style="border-color: #e74c3c; color: #e74c3c;">Cybersecurity</span>
+                        <span class="skill-tag" style="border-color: #2ecc71; color: #2ecc71;">Data Science</span>
+                        <span class="skill-tag">Mobile Dev</span> 
+                        <span class="skill-tag">Game Dev</span> 
+                        <span class="skill-tag">IoT / Embedded</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card" style="margin-top: 20px;">
+                <h3>Frameworks & Tools</h3>
+                <div class="skills-grid">
+                    <span class="skill-tag">Flutter</span> 
+                    <span class="skill-tag">Ruby on Rails</span> <span class="skill-tag">Git & GitHub</span>
+                    <span class="skill-tag">Linux (Kali / Ubuntu)</span>
+                    <span class="skill-tag">KiCAD</span>
+                    <span class="skill-tag">Wireshark</span>
+                    <span class="skill-tag">VS Code</span>
+                    <span class="skill-tag">Jupyter Notebooks</span>
+                    <span class="skill-tag">Arduino / ESP32</span>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div id="contact-modal" class="modal-overlay" onclick="closeContactModal(event)">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeContactModal(event)">&times;</span>
+            <div class="modal-grid">
+                <div class="modal-left">
+                    <h2>Get in Touch</h2>
+                    <p class="modal-subtitle">I'd like to hear from you!</p>
+                    <div class="modal-contact-info">
+                        <p>pkmagnifico@gmail.com
+                        <br>Naga City, Philippines</br></p>
+                    </div>
+                </div>
+                <div class="modal-right">
+                    <form class="contact-form" action="https://formspree.io/f/mojldjjr" method="POST">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label>First Name</label>
+                                <input type="text" name="firstName" required>
+                            </div>
+                            <div class="form-group">
+                                <label>Last Name</label>
+                                <input type="text" name="lastName" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>Email *</label>
+                            <input type="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Message</label>
+                            <textarea name="message" rows="4"></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">Send</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="social-sidebar">
+        <ul class="social-list">
+            <li><a href="https://github.com/elakai" target="_blank"><i class="fa-brands fa-github"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/pammagnifico/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a></li>
+            <li><a href="https://www.instagram.com/calinaell/" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+        </ul>
+    </div>
+
+    <script src="script.js"></script>
+
+
+</body>
+</html>
