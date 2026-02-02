@@ -5,7 +5,6 @@ A minimalist, responsive portfolio website designed to showcase my projects in *
 Built with a focus on clean UI, performance, and the "Deep Navy & Cyan" aesthetic.
 
 ## Live Demo
-[Insert Link to your deployed site here]
 
 ## Key Features
 * **Deep Navy Theme:** Custom linear gradient background (`160deg`) with neon cyan accents.
